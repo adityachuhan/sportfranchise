@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+/* fonts */
+
+body {
+    margin: 0px;
+}
+
+
+/* navbar */
+
+.navbar {
+    background-color: #00338d;
+}
+
+
+/* logo */
+
+.logo img {
+    height: 60px;
+}
+
+
+/* div containing links */
+
+.links {
+    display: flex;
+    margin-left: 45px;
+    align-items: center;
+}
+
+
+/* styling of link */
+
+.links a {
+    text-decoration: none;
+    color: #aebcd9;
+    padding: 24px 29px;
+    font-family: cursive;
+}
+
+
+/* styling of link on hover */
+
+.links a:hover {
+    transition: all .3s ease-in-out 0s;
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* div containing link and logo */
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* landing page */
+
+.landingpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 25px;
+    margin-top: 48px;
+    height: 384px;
+}
+
+.mainpara {
+    width: 50%;
+}
+
+.mainpara p {
+    font-size: 28px;
+    font-family: 'Montserrat';
+}
+
+.billsmafia {
+    width: 82%;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.mainimage {
+    width: 55%;
+}
+
+.mainimage img {
+    width: 91%;
+    position: relative;
+    background-color: transparent;
+    border-radius: 7px;
+    transform: skew( 354deg);
+    animation: wet 1s 0s infinite forwards;
+}
+
+@keyframes wet {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        top: 10px;
+        background-color: transparent;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.news {
+    margin-top: 50px;
+}
+
+
+/* heading news */
+
+.news h1 {
+    text-align: center;
+    font-size: 47px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* for newsbox */
+
+.newsbox {
+    display: flex;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* for image flip */
+
+.flip-box {
+    background-color: transparent;
+    width: 46%;
+    height: 333px;
+    margin: 11px 11px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+
+.flip-box-front img {
+    height: 333px;
+    width: 100%;
+}
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+
+/* Style the back side */
+
+.flip-box-back {
+    background-color: transparent;
+    color: #0a2b80;
+    text-align: center;
+    font-family: cursive;
+    transform: rotateY( 180deg);
+}
+
+
+/* Highlights portion */
+
+.gamebox {
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    background-color: whitesmoke;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: space-around;
+    height: 439px;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.game a {
+    width: 123px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: black;
+    padding: 3px 10px;
+    margin: auto;
+}
+
+.game a:hover {
+    transition: all .5s ease-in-out 0s;
+    color: black;
+    border-radius: 5px;
+    background-color: #d6d5d5;
+    box-shadow: 4px 6px 9px #878787;
+}
+
+.host {
+    display: flex;
+}
+
+.highimage {
+    width: 55%;
+    margin: auto;
+    padding: 12px;
+}
+
+.highimage img {
+    margin: 4px;
+}
+
+.highlightbox {
+    background: whitesmoke;
+    padding: 25px 0px;
+}
+
+.highlink {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    box-shadow: #c9c9c9 10px 10px;
+    border-radius: 10px;
+    overflow: auto;
+    background-color: #ffffff;
+    height: 567px;
+    margin: 30px;
+}
+
+.highlink ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.highlink ul li :hover {
+    transition: all .2s ease-out 0s;
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+.highlink ul li {
+    margin: 15px 20px;
+}
+
+.heading {
+    display: flex;
+    font-size: 21px;
+    align-items: center;
+    height: 137px;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#h1 {
+    margin: 15px;
+    padding: 20px;
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    text-align: center;
+}
+
+#h2 {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 46px;
+    background: white;
+    text-align: center;
+}
+
+#first {
+    FONT-FAMILY: 'Montserrat';
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
+
+.socialbox {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.link {
+    background-color: whitesmoke;
+    margin-top: 53px;
+    padding-left: 20px;
+    width: 28%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link:hover {
+    box-shadow: 10px 10px 10px black;
+}
+
+.link a {
+    text-decoration: none;
+    color: black;
+}
+
+.link a h3 {
+    margin: 0px;
+}
+
+.link a p {
+    margin: 0px;
+}

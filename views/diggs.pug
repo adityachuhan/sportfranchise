@@ -1,0 +1,37 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        style 
+         include ../looks/diggs.css
+    body 
+     h1 GET NOTIFICATION ON EVERY UPDATE
+     form(method='post' action='/addname')
+       label Enter Your Name:
+       br
+       input#name.inform(type='text' name='Name' placeholder='Enter name...' required='')
+       br
+       label Enter Your email:
+       br
+       input#email.inform(type="email", name="email" placeholder="Enter Your email...")
+       br
+       label Enter Your mobile:
+       br
+       input#mobile.inform(type="text", name="mobile" placeholder="Enter your mobile...")
+       br
+       label Enter Your gender:
+       br
+       input#gender.inform(type="text", name="gender" placeholder="Enter Your gender...")
+       br
+       div.box.reform
+        div.country
+         label Enter Your country:
+         br
+         input#country.ceage(type="text", name="country" placeholder="Enter Your country...")
+        div.age  
+         label Enter Your age:
+         br
+         input#age.ceage(type="text", name="age" placeholder="Enter Your age...") 
+       input#check(type='submit' value='Submit')

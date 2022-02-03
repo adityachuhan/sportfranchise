@@ -1,0 +1,63 @@
+.box {
+    display: flex;
+}
+
+body {
+    background-size: cover;
+    background-image: url(../public/img3.jpg);
+}
+
+body h1 {
+    text-align: center;
+    font-family: cursive;
+}
+
+form {
+    width: 30%;
+    font-family: cursive;
+    margin: 86px auto;
+    height: 427px;
+    BACKGROUND-COLOR: #c3c3c3;
+    padding: 34px;
+    box-shadow: 10px 10px 10px white;
+}
+
+.inform {
+    width: 100%;
+    height: 37px;
+    margin: 8px 0px;
+}
+
+.reform {
+    width: 100%;
+    height: 37px;
+    margin: 8px 0px;
+}
+
+.inform:hover {
+    box-shadow: 10px 10px 10px #676767;
+}
+
+.ceage {
+    width: 100%;
+    height: 37px;
+    margin: 8px 0px;
+}
+
+.ceage:hover {
+    box-shadow: 10px 10px 10px #676767;
+}
+
+.country {
+    width: 50%;
+}
+
+.age {
+    width: 50%;
+}
+
+#check {
+    position: relative;
+    top: 50px;
+    left: 159px;
+}
